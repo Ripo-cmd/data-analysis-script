@@ -12,10 +12,10 @@ data_kategorikal = ['Kategori_A', 'Kategori_B', 'Kategori_C', 'Kategori_D', 'Kat
 # Generate dataset numerikal (menghasilkan bilangan bulat acak antara 1 dan 100)
 data_numerikal = np.random.randint(1, 100, size=21)
 
-# Konversi data numerikal ke DataFrame - Kontol
+# Konversi data numerikal ke DataFrame
 df_numerikal = pd.DataFrame(data_numerikal, columns=['Numerikal'])
 
-# Konversi data kategorikal ke DataFrame - Kontol
+# Konversi data kategorikal ke DataFrame
 df_kategorikal = pd.DataFrame(data_kategorikal, columns=['Kategorikal'])
 
 # Menghitung Measures of Central Tendency
@@ -42,7 +42,7 @@ summary_kategorikal = df_kategorikal.describe()
 
 # Visualisasi Data
 # Box plot untuk data numerikal
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(10, 8))  # Perbesar jendela
 plt.boxplot(data_numerikal)
 plt.title('Box plot Data Numerikal')
 plt.xlabel('Data Numerikal')
@@ -50,7 +50,7 @@ plt.ylabel('Nilai')
 plt.show()
 
 # Histogram untuk data numerikal
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(10, 8))  # Perbesar jendela
 plt.hist(data_numerikal, bins=10, color='skyblue', edgecolor='black')
 plt.title('Histogram Data Numerikal')
 plt.xlabel('Nilai')
@@ -58,13 +58,13 @@ plt.ylabel('Frekuensi')
 plt.show()
 
 # Pie chart untuk data kategorikal
-plt.figure(figsize=(8, 8))
+plt.figure(figsize=(10, 10))  # Perbesar jendela
 summary_kategorikal['Kategorikal'].value_counts().plot(kind='pie', autopct='%1.1f%%')
 plt.title('Pie chart Data Kategorikal')
 plt.show()
 
 # Bar chart untuk data kategorikal
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(12, 8))  # Perbesar jendela
 summary_kategorikal['Kategorikal'].value_counts().plot(kind='bar', color='salmon')
 plt.title('Bar chart Data Kategorikal')
 plt.xlabel('Kategori')
@@ -86,7 +86,7 @@ data_numerikal2_urut_desc = np.sort(data_numerikal2)[::-1]
 korelasi = np.corrcoef(data_numerikal, data_numerikal2)
 
 # Visualisasi data menggunakan X-Y plots
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(10, 8))  # Perbesar jendela
 plt.scatter(data_numerikal, data_numerikal2)
 plt.title('X-Y plot Data Numerikal')
 plt.xlabel('Data Numerikal 1')
@@ -94,7 +94,7 @@ plt.ylabel('Data Numerikal 2')
 plt.show()
 
 # Heatmap untuk korelasi antara pasangan data
-plt.figure(figsize=(6, 4))
+plt.figure(figsize=(8, 6))  # Perbesar jendela
 plt.imshow(korelasi, cmap='coolwarm', interpolation='nearest')
 plt.colorbar()
 plt.title('Heatmap Korelasi')

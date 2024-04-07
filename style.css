@@ -1,0 +1,23 @@
+/* style.css */
+
+body {
+    background-color: #f0f0f0; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Jenis font */
+}
+
+/* Warna tombol pastel */
+.button-pastel {
+    background-color: #ffd1dc; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    border: none; /* Tanpa border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Kursor tangan */
+    border-radius: 5px; /* Sudut melengkung */
+    text-align: center; /* Teks rata tengah */
+    display: inline-block; /* Tampilan inline */
+    text-decoration: none; /* Tanpa garis bawah */
+}
+
+.button-pastel:hover {
+    background-color: #ffb6c1; /* Warna latar belakang saat hover */
+}
