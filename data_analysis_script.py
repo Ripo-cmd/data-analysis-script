@@ -12,10 +12,10 @@ data_kategorikal = ['Kategori_A', 'Kategori_B', 'Kategori_C', 'Kategori_D', 'Kat
 # Generate dataset numerikal (menghasilkan bilangan bulat acak antara 1 dan 100)
 data_numerikal = np.random.randint(1, 100, size=21)
 
-# Konversi data numerikal ke DataFrame
+# Konversi data numerikal ke DataFrame - Kontol
 df_numerikal = pd.DataFrame(data_numerikal, columns=['Numerikal'])
 
-# Konversi data kategorikal ke DataFrame
+# Konversi data kategorikal ke DataFrame - Kontol
 df_kategorikal = pd.DataFrame(data_kategorikal, columns=['Kategorikal'])
 
 # Menghitung Measures of Central Tendency
