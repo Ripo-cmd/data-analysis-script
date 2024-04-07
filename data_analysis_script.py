@@ -9,7 +9,7 @@ data_kategorikal = ['Kategori_A', 'Kategori_B', 'Kategori_C', 'Kategori_D', 'Kat
                     'Kategori_K', 'Kategori_L', 'Kategori_M', 'Kategori_N', 'Kategori_O',
                     'Kategori_P', 'Kategori_Q', 'Kategori_R', 'Kategori_S', 'Kategori_T', 'Kategori_U']
 
-# Generate dataset numerikal
+# Generate dataset numerikal (menghasilkan bilangan bulat acak antara 1 dan 100)
 data_numerikal = np.random.randint(1, 100, size=21)
 
 # Konversi data numerikal ke DataFrame
